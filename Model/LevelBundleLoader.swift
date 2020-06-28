@@ -4,7 +4,7 @@ import UIKit
 
 class LevelBundleLoader {
     init() {
-        levelBundles = Array<LevelBundle>()
+        levelBundles = [LevelBundle]()
         let levels = BoardLoader.loadLevels()
         loadTests(levels: levels)
         loadDiamonds(levels: levels)
@@ -42,5 +42,5 @@ class LevelBundleLoader {
         })
     }
 
-    var levelBundles: Array<LevelBundle>
+    var levelBundles: [LevelBundle]
 }

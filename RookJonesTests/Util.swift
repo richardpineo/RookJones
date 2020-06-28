@@ -21,7 +21,7 @@ class Util {
     }
 
     func loadAllLevels() -> [Level] {
-        var levels = Array<Level>()
+        var levels = [Level]()
         levels.append(contentsOf: BoardLoader.loadLevels())
         levels.append(contentsOf: loadTestLevels())
         return levels

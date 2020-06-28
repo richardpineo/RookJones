@@ -3,7 +3,7 @@ import Foundation
 
 class Bishop: Piece {
     func getAttackLocations(board: Board, pieceLocation: Location) -> [Location] {
-        var attacks = Array<Location>()
+        var attacks = [Location]()
 
         // Walk in each direction until blocked or off the board
         let movements = [
@@ -15,7 +15,7 @@ class Bishop: Piece {
 
         for movement in movements {
             var loc = pieceLocation.offset(movement)
-            while board.isLocationValid(loc) && !BoardLogic.doesTileBlock(board.getTileType(loc)) {
+            while board.isLocationValid(loc), !BoardLogic.doesTileBlock(board.getTileType(loc)) {
                 attacks.append(loc)
                 loc = loc.offset(movement)
             }

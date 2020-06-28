@@ -3,7 +3,7 @@ import Foundation
 
 class Knight: Piece {
     func getAttackLocations(board: Board, pieceLocation: Location) -> [Location] {
-        var attacks = Array<Location>()
+        var attacks = [Location]()
 
         // Walk in each direction until blocked or off the board
         let movements = [
@@ -19,7 +19,7 @@ class Knight: Piece {
 
         for movement in movements {
             let loc = pieceLocation.offset(movement)
-            if board.isLocationValid(loc) && !BoardLogic.doesTileBlock(board.getTileType(loc)) {
+            if board.isLocationValid(loc), !BoardLogic.doesTileBlock(board.getTileType(loc)) {
                 attacks.append(loc)
             }
         }

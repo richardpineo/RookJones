@@ -7,7 +7,7 @@ struct BoardLoader {
     }
 
     static func loadLevelsOfType(bundle: Bundle, ofType: LevelType) -> [Level] {
-        var levels = Array<Level>()
+        var levels = [Level]()
         let ext = ofType == LevelType.Real ? "lvl" : "test"
         let paths = bundle.paths(forResourcesOfType: ext, inDirectory: nil)
         for path in paths {
@@ -54,7 +54,7 @@ struct BoardLoader {
     }
 
     static func toAscii(_ board: Board) throws -> [String] {
-        var ascii = Array<String>()
+        var ascii = [String]()
         for row in 0 ... board.numRows - 1 {
             var line = ""
             for col in 0 ... board.numCols - 1 {

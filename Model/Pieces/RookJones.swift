@@ -13,7 +13,7 @@ class RookJonesPiece: Piece {
     func getAttackLocations(board: Board, pieceLocation: Location) -> [Location] {
         // Rook jones acts a lot like a rook, but can 'attack' doors
 
-        var attacks = Array<Location>()
+        var attacks = [Location]()
 
         // Walk in each direction until blocked or off the board
         let movements = [
@@ -27,18 +27,15 @@ class RookJonesPiece: Piece {
             var loc = pieceLocation.offset(movement)
             while board.isLocationValid(loc) {
                 var addLoc: Bool
-                let tileType =  board.getTileType(loc)
-                switch tileType
-                {
+                let tileType = board.getTileType(loc)
+                switch tileType {
                 case .LockedDoor:
                     addLoc = hasKey
-                    break
-                    
+
                 case .Exit:
                     addLoc = hasAllies
-                    break
-                    
-                default :
+
+                default:
                     addLoc = true
                 }
 
@@ -48,8 +45,7 @@ class RookJonesPiece: Piece {
                 }
 
                 // This one is good, add it in and keep walking.
-                if(addLoc)
-                {
+                if addLoc {
                     attacks.append(loc)
                     loc = loc.offset(movement)
                 }

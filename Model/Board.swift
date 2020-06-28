@@ -4,7 +4,7 @@ import Foundation
 class Board: Equatable {
     let numRows: Int
     let numCols: Int
-    var tiles: Array<TileType>
+    var tiles: [TileType]
 
     convenience init(_ other: Board) throws {
         try self.init(numRows: other.numRows, numCols: other.numCols)
@@ -26,19 +26,19 @@ class Board: Equatable {
 
     func getTileType(_ loc: Location) -> TileType {
         do {
-            return try tiles[self.arrayIndex(loc)]
+            return try tiles[arrayIndex(loc)]
         } catch {
             return TileType.Empty
         }
     }
 
     func setTileType(location: Location, tileType: TileType) throws {
-        try tiles[self.arrayIndex(location)] = tileType
+        try tiles[arrayIndex(location)] = tileType
     }
 
     // Returns all the locations on this board
     func locations() -> [Location] {
-        var locs = Array<Location>()
+        var locs = [Location]()
         for row in 0 ... numRows - 1 {
             for col in 0 ... numCols - 1 {
                 locs.append(Location(row, col))

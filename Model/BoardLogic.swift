@@ -4,9 +4,9 @@ import Foundation
 class BoardLogic {
     // Checks to see if the board is valid and throws an error if it isn't.
     static func checkBoardValid(_ board: Board) throws {
-        let rookJonesCount = board.tiles.reduce(0, { count, type in
+        let rookJonesCount = board.tiles.reduce(0) { count, type in
             count + (type == TileType.RookJones ? 1 : 0)
-        })
+        }
 
         if rookJonesCount != 1 {
             throw BoardError.invalidBoardDefinition("There were \(rookJonesCount) Rook Jones; expected 1")
@@ -19,7 +19,7 @@ class BoardLogic {
         // Walk through all the pieces and add the attacked locations to the set.
         for loc in board.locations() {
             let tileType = board.getTileType(loc)
-            if !isAlly(tileType) && tileType != TileType.RookJones {
+            if !isAlly(tileType), tileType != TileType.RookJones {
                 let piece = makePiece(tileType)
                 if piece != nil {
                     attacked = attacked.union(piece!.getAttackLocations(board: board, pieceLocation: loc))

@@ -8,13 +8,13 @@ struct SelectLevelBundleView: View {
         VStack {
             Text(bundle.name)
             HStack(alignment: .top, spacing: 0) {
-                ForEach(bundle.levels) { level in
+                ForEach(Array(bundle.levels.enumerated()), id: \.offset) { index, level in
                     NavigationLink(
                         destination: PlayLevelView(
                             level: level.level
                         )
                     ) {
-                        SelectLevelEntryView(level: level)
+                        SelectLevelEntryView(level: level, index: index)
                     }
                 }
             }
@@ -22,9 +22,9 @@ struct SelectLevelBundleView: View {
     }
 }
 
-struct LevelBundleView_Previews: PreviewProvider {
+struct SelectLevelBundleView_Previews: PreviewProvider {
     static var previews: some View {
         SelectLevelBundleView(bundle: LevelBundleLoader().levelBundles[0])
-            .previewLayout(.fixed(width: 500, height: 100))
+            .previewLayout(.fixed(width: 500, height: 200))
     }
 }
