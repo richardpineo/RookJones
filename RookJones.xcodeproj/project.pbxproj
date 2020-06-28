@@ -7,13 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2A8AB124A90DDA00734F1D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB024A90DDA00734F1D /* .gitignore */; };
+		BF2A8ACE24A90E2E00734F1D /* Diamonds_08.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB324A90E2E00734F1D /* Diamonds_08.lvl */; };
+		BF2A8ACF24A90E2E00734F1D /* Diamonds_08.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB324A90E2E00734F1D /* Diamonds_08.lvl */; };
+		BF2A8AD024A90E2E00734F1D /* Diamonds_17.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB424A90E2E00734F1D /* Diamonds_17.lvl */; };
+		BF2A8AD124A90E2E00734F1D /* Diamonds_17.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB424A90E2E00734F1D /* Diamonds_17.lvl */; };
+		BF2A8AD224A90E2E00734F1D /* Diamonds_03.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB524A90E2E00734F1D /* Diamonds_03.lvl */; };
+		BF2A8AD324A90E2E00734F1D /* Diamonds_03.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB524A90E2E00734F1D /* Diamonds_03.lvl */; };
+		BF2A8AD424A90E2E00734F1D /* Test_01.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB624A90E2E00734F1D /* Test_01.lvl */; };
+		BF2A8AD524A90E2E00734F1D /* Test_01.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB624A90E2E00734F1D /* Test_01.lvl */; };
+		BF2A8AD624A90E2E00734F1D /* Test_00.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB724A90E2E00734F1D /* Test_00.lvl */; };
+		BF2A8AD724A90E2E00734F1D /* Test_00.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB724A90E2E00734F1D /* Test_00.lvl */; };
+		BF2A8AD824A90E2E00734F1D /* Diamonds_07.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB824A90E2E00734F1D /* Diamonds_07.lvl */; };
+		BF2A8AD924A90E2E00734F1D /* Diamonds_07.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB824A90E2E00734F1D /* Diamonds_07.lvl */; };
+		BF2A8ADA24A90E2E00734F1D /* Diamonds_13.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB924A90E2E00734F1D /* Diamonds_13.lvl */; };
+		BF2A8ADB24A90E2E00734F1D /* Diamonds_13.lvl in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8AB924A90E2E00734F1D /* Diamonds_13.lvl */; };
+		BF2A8ADC24A90E2E00734F1D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ABB24A90E2E00734F1D /* Location.swift */; };
+		BF2A8ADD24A90E2E00734F1D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ABB24A90E2E00734F1D /* Location.swift */; };
+		BF2A8ADE24A90E2E00734F1D /* TileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ABC24A90E2E00734F1D /* TileType.swift */; };
+		BF2A8ADF24A90E2E00734F1D /* TileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ABC24A90E2E00734F1D /* TileType.swift */; };
+		BF2A8AE024A90E2E00734F1D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ABD24A90E2E00734F1D /* Board.swift */; };
+		BF2A8AE124A90E2E00734F1D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ABD24A90E2E00734F1D /* Board.swift */; };
+		BF2A8AE224A90E2E00734F1D /* BoardLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ABE24A90E2E00734F1D /* BoardLoader.swift */; };
+		BF2A8AE324A90E2E00734F1D /* BoardLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ABE24A90E2E00734F1D /* BoardLoader.swift */; };
+		BF2A8AE424A90E2E00734F1D /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC024A90E2E00734F1D /* Knight.swift */; };
+		BF2A8AE524A90E2E00734F1D /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC024A90E2E00734F1D /* Knight.swift */; };
+		BF2A8AE624A90E2E00734F1D /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC124A90E2E00734F1D /* Piece.swift */; };
+		BF2A8AE724A90E2E00734F1D /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC124A90E2E00734F1D /* Piece.swift */; };
+		BF2A8AE824A90E2E00734F1D /* Bishop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC224A90E2E00734F1D /* Bishop.swift */; };
+		BF2A8AE924A90E2E00734F1D /* Bishop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC224A90E2E00734F1D /* Bishop.swift */; };
+		BF2A8AEA24A90E2E00734F1D /* Queen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC324A90E2E00734F1D /* Queen.swift */; };
+		BF2A8AEB24A90E2E00734F1D /* Queen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC324A90E2E00734F1D /* Queen.swift */; };
+		BF2A8AEC24A90E2E00734F1D /* Rook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC424A90E2E00734F1D /* Rook.swift */; };
+		BF2A8AED24A90E2E00734F1D /* Rook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC424A90E2E00734F1D /* Rook.swift */; };
+		BF2A8AEE24A90E2E00734F1D /* RookJones.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC524A90E2E00734F1D /* RookJones.swift */; };
+		BF2A8AEF24A90E2E00734F1D /* RookJones.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC524A90E2E00734F1D /* RookJones.swift */; };
+		BF2A8AF024A90E2F00734F1D /* BoardLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC624A90E2E00734F1D /* BoardLogic.swift */; };
+		BF2A8AF124A90E2F00734F1D /* BoardLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC624A90E2E00734F1D /* BoardLogic.swift */; };
+		BF2A8AF224A90E2F00734F1D /* LevelBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC724A90E2E00734F1D /* LevelBundle.swift */; };
+		BF2A8AF324A90E2F00734F1D /* LevelBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC724A90E2E00734F1D /* LevelBundle.swift */; };
+		BF2A8AF424A90E2F00734F1D /* LevelBundleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC824A90E2E00734F1D /* LevelBundleLoader.swift */; };
+		BF2A8AF524A90E2F00734F1D /* LevelBundleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC824A90E2E00734F1D /* LevelBundleLoader.swift */; };
+		BF2A8AF624A90E2F00734F1D /* BoardLayout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC924A90E2E00734F1D /* BoardLayout.xcdatamodeld */; };
+		BF2A8AF724A90E2F00734F1D /* BoardLayout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AC924A90E2E00734F1D /* BoardLayout.xcdatamodeld */; };
+		BF2A8AF824A90E2F00734F1D /* BoardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ACB24A90E2E00734F1D /* BoardError.swift */; };
+		BF2A8AF924A90E2F00734F1D /* BoardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ACB24A90E2E00734F1D /* BoardError.swift */; };
+		BF2A8AFA24A90E2F00734F1D /* LevelUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ACC24A90E2E00734F1D /* LevelUI.swift */; };
+		BF2A8AFB24A90E2F00734F1D /* LevelUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ACC24A90E2E00734F1D /* LevelUI.swift */; };
+		BF2A8AFC24A90E2F00734F1D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ACD24A90E2E00734F1D /* Level.swift */; };
+		BF2A8AFD24A90E2F00734F1D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8ACD24A90E2E00734F1D /* Level.swift */; };
+		BF2A8B0824A90E4D00734F1D /* PieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8AFE24A90E4D00734F1D /* PieceTests.swift */; };
+		BF2A8B0A24A90E4D00734F1D /* rook.test in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8B0024A90E4D00734F1D /* rook.test */; };
+		BF2A8B0C24A90E4D00734F1D /* knight.test in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8B0124A90E4D00734F1D /* knight.test */; };
+		BF2A8B0E24A90E4D00734F1D /* logic.test in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8B0224A90E4D00734F1D /* logic.test */; };
+		BF2A8B1024A90E4D00734F1D /* bishop.test in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8B0324A90E4D00734F1D /* bishop.test */; };
+		BF2A8B1224A90E4D00734F1D /* queen.test in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8B0424A90E4D00734F1D /* queen.test */; };
+		BF2A8B1424A90E4D00734F1D /* bad - two rook jones.test in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8B0524A90E4D00734F1D /* bad - two rook jones.test */; };
+		BF2A8B1624A90E4D00734F1D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B0624A90E4D00734F1D /* Util.swift */; };
+		BF2A8B1824A90E5600734F1D /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B1724A90E5600734F1D /* BaseTests.swift */; };
 		BF9197A124A90C69005E1B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A024A90C69005E1B1D /* AppDelegate.swift */; };
 		BF9197A324A90C69005E1B1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A224A90C69005E1B1D /* SceneDelegate.swift */; };
 		BF9197A524A90C69005E1B1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A424A90C69005E1B1D /* ContentView.swift */; };
 		BF9197A724A90C69005E1B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9197A624A90C69005E1B1D /* Assets.xcassets */; };
 		BF9197AA24A90C69005E1B1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9197A924A90C69005E1B1D /* Preview Assets.xcassets */; };
 		BF9197AD24A90C69005E1B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9197AB24A90C69005E1B1D /* LaunchScreen.storyboard */; };
-		BF9197B824A90C69005E1B1D /* RookJonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197B724A90C69005E1B1D /* RookJonesTests.swift */; };
 		BF9197C324A90C6A005E1B1D /* RookJonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197C224A90C6A005E1B1D /* RookJonesUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +92,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF2A8AB024A90DDA00734F1D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BF2A8AB324A90E2E00734F1D /* Diamonds_08.lvl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Diamonds_08.lvl; sourceTree = "<group>"; };
+		BF2A8AB424A90E2E00734F1D /* Diamonds_17.lvl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Diamonds_17.lvl; sourceTree = "<group>"; };
+		BF2A8AB524A90E2E00734F1D /* Diamonds_03.lvl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Diamonds_03.lvl; sourceTree = "<group>"; };
+		BF2A8AB624A90E2E00734F1D /* Test_01.lvl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test_01.lvl; sourceTree = "<group>"; };
+		BF2A8AB724A90E2E00734F1D /* Test_00.lvl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test_00.lvl; sourceTree = "<group>"; };
+		BF2A8AB824A90E2E00734F1D /* Diamonds_07.lvl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Diamonds_07.lvl; sourceTree = "<group>"; };
+		BF2A8AB924A90E2E00734F1D /* Diamonds_13.lvl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Diamonds_13.lvl; sourceTree = "<group>"; };
+		BF2A8ABB24A90E2E00734F1D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		BF2A8ABC24A90E2E00734F1D /* TileType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileType.swift; sourceTree = "<group>"; };
+		BF2A8ABD24A90E2E00734F1D /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		BF2A8ABE24A90E2E00734F1D /* BoardLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardLoader.swift; sourceTree = "<group>"; };
+		BF2A8AC024A90E2E00734F1D /* Knight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
+		BF2A8AC124A90E2E00734F1D /* Piece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
+		BF2A8AC224A90E2E00734F1D /* Bishop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bishop.swift; sourceTree = "<group>"; };
+		BF2A8AC324A90E2E00734F1D /* Queen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queen.swift; sourceTree = "<group>"; };
+		BF2A8AC424A90E2E00734F1D /* Rook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rook.swift; sourceTree = "<group>"; };
+		BF2A8AC524A90E2E00734F1D /* RookJones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RookJones.swift; sourceTree = "<group>"; };
+		BF2A8AC624A90E2E00734F1D /* BoardLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardLogic.swift; sourceTree = "<group>"; };
+		BF2A8AC724A90E2E00734F1D /* LevelBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelBundle.swift; sourceTree = "<group>"; };
+		BF2A8AC824A90E2E00734F1D /* LevelBundleLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelBundleLoader.swift; sourceTree = "<group>"; };
+		BF2A8ACA24A90E2E00734F1D /* BoardLayout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoardLayout.xcdatamodel; sourceTree = "<group>"; };
+		BF2A8ACB24A90E2E00734F1D /* BoardError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardError.swift; sourceTree = "<group>"; };
+		BF2A8ACC24A90E2E00734F1D /* LevelUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelUI.swift; sourceTree = "<group>"; };
+		BF2A8ACD24A90E2E00734F1D /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		BF2A8AFE24A90E4D00734F1D /* PieceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceTests.swift; sourceTree = "<group>"; };
+		BF2A8B0024A90E4D00734F1D /* rook.test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rook.test; sourceTree = "<group>"; };
+		BF2A8B0124A90E4D00734F1D /* knight.test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = knight.test; sourceTree = "<group>"; };
+		BF2A8B0224A90E4D00734F1D /* logic.test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = logic.test; sourceTree = "<group>"; };
+		BF2A8B0324A90E4D00734F1D /* bishop.test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bishop.test; sourceTree = "<group>"; };
+		BF2A8B0424A90E4D00734F1D /* queen.test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = queen.test; sourceTree = "<group>"; };
+		BF2A8B0524A90E4D00734F1D /* bad - two rook jones.test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bad - two rook jones.test"; sourceTree = "<group>"; };
+		BF2A8B0624A90E4D00734F1D /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		BF2A8B1724A90E5600734F1D /* BaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
 		BF91979D24A90C69005E1B1D /* RookJones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RookJones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9197A024A90C69005E1B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF9197A224A90C69005E1B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +135,6 @@
 		BF9197AC24A90C69005E1B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF9197AE24A90C69005E1B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9197B324A90C69005E1B1D /* RookJonesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RookJonesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF9197B724A90C69005E1B1D /* RookJonesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookJonesTests.swift; sourceTree = "<group>"; };
 		BF9197B924A90C69005E1B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9197BE24A90C6A005E1B1D /* RookJonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RookJonesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9197C224A90C6A005E1B1D /* RookJonesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookJonesUITests.swift; sourceTree = "<group>"; };
@@ -76,9 +166,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF2A8AB224A90E2E00734F1D /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A8AB324A90E2E00734F1D /* Diamonds_08.lvl */,
+				BF2A8AB424A90E2E00734F1D /* Diamonds_17.lvl */,
+				BF2A8AB524A90E2E00734F1D /* Diamonds_03.lvl */,
+				BF2A8AB624A90E2E00734F1D /* Test_01.lvl */,
+				BF2A8AB724A90E2E00734F1D /* Test_00.lvl */,
+				BF2A8AB824A90E2E00734F1D /* Diamonds_07.lvl */,
+				BF2A8AB924A90E2E00734F1D /* Diamonds_13.lvl */,
+			);
+			path = Levels;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF2A8ABA24A90E2E00734F1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A8ABB24A90E2E00734F1D /* Location.swift */,
+				BF2A8ABC24A90E2E00734F1D /* TileType.swift */,
+				BF2A8ABD24A90E2E00734F1D /* Board.swift */,
+				BF2A8ABE24A90E2E00734F1D /* BoardLoader.swift */,
+				BF2A8ABF24A90E2E00734F1D /* Pieces */,
+				BF2A8AC624A90E2E00734F1D /* BoardLogic.swift */,
+				BF2A8AC724A90E2E00734F1D /* LevelBundle.swift */,
+				BF2A8AC824A90E2E00734F1D /* LevelBundleLoader.swift */,
+				BF2A8AC924A90E2E00734F1D /* BoardLayout.xcdatamodeld */,
+				BF2A8ACB24A90E2E00734F1D /* BoardError.swift */,
+				BF2A8ACC24A90E2E00734F1D /* LevelUI.swift */,
+				BF2A8ACD24A90E2E00734F1D /* Level.swift */,
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF2A8ABF24A90E2E00734F1D /* Pieces */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A8AC024A90E2E00734F1D /* Knight.swift */,
+				BF2A8AC124A90E2E00734F1D /* Piece.swift */,
+				BF2A8AC224A90E2E00734F1D /* Bishop.swift */,
+				BF2A8AC324A90E2E00734F1D /* Queen.swift */,
+				BF2A8AC424A90E2E00734F1D /* Rook.swift */,
+				BF2A8AC524A90E2E00734F1D /* RookJones.swift */,
+			);
+			path = Pieces;
+			sourceTree = "<group>";
+		};
+		BF2A8AFF24A90E4D00734F1D /* Test Levels */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A8B0024A90E4D00734F1D /* rook.test */,
+				BF2A8B0124A90E4D00734F1D /* knight.test */,
+				BF2A8B0224A90E4D00734F1D /* logic.test */,
+				BF2A8B0324A90E4D00734F1D /* bishop.test */,
+				BF2A8B0424A90E4D00734F1D /* queen.test */,
+				BF2A8B0524A90E4D00734F1D /* bad - two rook jones.test */,
+			);
+			path = "Test Levels";
+			sourceTree = "<group>";
+		};
 		BF91979424A90C69005E1B1D = {
 			isa = PBXGroup;
 			children = (
+				BF2A8AB024A90DDA00734F1D /* .gitignore */,
 				BF91979F24A90C69005E1B1D /* RookJones */,
 				BF9197B624A90C69005E1B1D /* RookJonesTests */,
 				BF9197C124A90C6A005E1B1D /* RookJonesUITests */,
@@ -99,6 +249,8 @@
 		BF91979F24A90C69005E1B1D /* RookJones */ = {
 			isa = PBXGroup;
 			children = (
+				BF2A8AB224A90E2E00734F1D /* Levels */,
+				BF2A8ABA24A90E2E00734F1D /* Model */,
 				BF9197A024A90C69005E1B1D /* AppDelegate.swift */,
 				BF9197A224A90C69005E1B1D /* SceneDelegate.swift */,
 				BF9197A424A90C69005E1B1D /* ContentView.swift */,
@@ -121,8 +273,11 @@
 		BF9197B624A90C69005E1B1D /* RookJonesTests */ = {
 			isa = PBXGroup;
 			children = (
-				BF9197B724A90C69005E1B1D /* RookJonesTests.swift */,
+				BF2A8AFF24A90E4D00734F1D /* Test Levels */,
+				BF2A8B1724A90E5600734F1D /* BaseTests.swift */,
 				BF9197B924A90C69005E1B1D /* Info.plist */,
+				BF2A8AFE24A90E4D00734F1D /* PieceTests.swift */,
+				BF2A8B0624A90E4D00734F1D /* Util.swift */,
 			);
 			path = RookJonesTests;
 			sourceTree = "<group>";
@@ -239,9 +394,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2A8AD824A90E2E00734F1D /* Diamonds_07.lvl in Resources */,
+				BF2A8AB124A90DDA00734F1D /* .gitignore in Resources */,
 				BF9197AD24A90C69005E1B1D /* LaunchScreen.storyboard in Resources */,
+				BF2A8AD624A90E2E00734F1D /* Test_00.lvl in Resources */,
 				BF9197AA24A90C69005E1B1D /* Preview Assets.xcassets in Resources */,
 				BF9197A724A90C69005E1B1D /* Assets.xcassets in Resources */,
+				BF2A8ACE24A90E2E00734F1D /* Diamonds_08.lvl in Resources */,
+				BF2A8AD224A90E2E00734F1D /* Diamonds_03.lvl in Resources */,
+				BF2A8AD024A90E2E00734F1D /* Diamonds_17.lvl in Resources */,
+				BF2A8AD424A90E2E00734F1D /* Test_01.lvl in Resources */,
+				BF2A8ADA24A90E2E00734F1D /* Diamonds_13.lvl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +412,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2A8ACF24A90E2E00734F1D /* Diamonds_08.lvl in Resources */,
+				BF2A8AD124A90E2E00734F1D /* Diamonds_17.lvl in Resources */,
+				BF2A8B1224A90E4D00734F1D /* queen.test in Resources */,
+				BF2A8B0E24A90E4D00734F1D /* logic.test in Resources */,
+				BF2A8B1024A90E4D00734F1D /* bishop.test in Resources */,
+				BF2A8B0C24A90E4D00734F1D /* knight.test in Resources */,
+				BF2A8B0A24A90E4D00734F1D /* rook.test in Resources */,
+				BF2A8AD924A90E2E00734F1D /* Diamonds_07.lvl in Resources */,
+				BF2A8AD324A90E2E00734F1D /* Diamonds_03.lvl in Resources */,
+				BF2A8ADB24A90E2E00734F1D /* Diamonds_13.lvl in Resources */,
+				BF2A8AD724A90E2E00734F1D /* Test_00.lvl in Resources */,
+				BF2A8B1424A90E4D00734F1D /* bad - two rook jones.test in Resources */,
+				BF2A8AD524A90E2E00734F1D /* Test_01.lvl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +442,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2A8AF224A90E2F00734F1D /* LevelBundle.swift in Sources */,
+				BF2A8AF824A90E2F00734F1D /* BoardError.swift in Sources */,
+				BF2A8AF624A90E2F00734F1D /* BoardLayout.xcdatamodeld in Sources */,
+				BF2A8AEE24A90E2E00734F1D /* RookJones.swift in Sources */,
 				BF9197A124A90C69005E1B1D /* AppDelegate.swift in Sources */,
 				BF9197A324A90C69005E1B1D /* SceneDelegate.swift in Sources */,
+				BF2A8AE024A90E2E00734F1D /* Board.swift in Sources */,
+				BF2A8AEA24A90E2E00734F1D /* Queen.swift in Sources */,
+				BF2A8ADE24A90E2E00734F1D /* TileType.swift in Sources */,
+				BF2A8AE424A90E2E00734F1D /* Knight.swift in Sources */,
+				BF2A8AF024A90E2F00734F1D /* BoardLogic.swift in Sources */,
+				BF2A8AE624A90E2E00734F1D /* Piece.swift in Sources */,
+				BF2A8AE824A90E2E00734F1D /* Bishop.swift in Sources */,
+				BF2A8AF424A90E2F00734F1D /* LevelBundleLoader.swift in Sources */,
+				BF2A8AEC24A90E2E00734F1D /* Rook.swift in Sources */,
+				BF2A8ADC24A90E2E00734F1D /* Location.swift in Sources */,
+				BF2A8AE224A90E2E00734F1D /* BoardLoader.swift in Sources */,
 				BF9197A524A90C69005E1B1D /* ContentView.swift in Sources */,
+				BF2A8AFC24A90E2F00734F1D /* Level.swift in Sources */,
+				BF2A8AFA24A90E2F00734F1D /* LevelUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +469,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF9197B824A90C69005E1B1D /* RookJonesTests.swift in Sources */,
+				BF2A8ADD24A90E2E00734F1D /* Location.swift in Sources */,
+				BF2A8AE724A90E2E00734F1D /* Piece.swift in Sources */,
+				BF2A8AE324A90E2E00734F1D /* BoardLoader.swift in Sources */,
+				BF2A8AF524A90E2F00734F1D /* LevelBundleLoader.swift in Sources */,
+				BF2A8AEB24A90E2E00734F1D /* Queen.swift in Sources */,
+				BF2A8AED24A90E2E00734F1D /* Rook.swift in Sources */,
+				BF2A8AF324A90E2F00734F1D /* LevelBundle.swift in Sources */,
+				BF2A8B1624A90E4D00734F1D /* Util.swift in Sources */,
+				BF2A8AE924A90E2E00734F1D /* Bishop.swift in Sources */,
+				BF2A8AE124A90E2E00734F1D /* Board.swift in Sources */,
+				BF2A8B1824A90E5600734F1D /* BaseTests.swift in Sources */,
+				BF2A8AE524A90E2E00734F1D /* Knight.swift in Sources */,
+				BF2A8AFB24A90E2F00734F1D /* LevelUI.swift in Sources */,
+				BF2A8AFD24A90E2F00734F1D /* Level.swift in Sources */,
+				BF2A8AF124A90E2F00734F1D /* BoardLogic.swift in Sources */,
+				BF2A8AEF24A90E2E00734F1D /* RookJones.swift in Sources */,
+				BF2A8AF924A90E2F00734F1D /* BoardError.swift in Sources */,
+				BF2A8ADF24A90E2E00734F1D /* TileType.swift in Sources */,
+				BF2A8AF724A90E2F00734F1D /* BoardLayout.xcdatamodeld in Sources */,
+				BF2A8B0824A90E4D00734F1D /* PieceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +805,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF2A8AC924A90E2E00734F1D /* BoardLayout.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF2A8ACA24A90E2E00734F1D /* BoardLayout.xcdatamodel */,
+			);
+			currentVersion = BF2A8ACA24A90E2E00734F1D /* BoardLayout.xcdatamodel */;
+			path = BoardLayout.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BF91979524A90C69005E1B1D /* Project object */;
 }
