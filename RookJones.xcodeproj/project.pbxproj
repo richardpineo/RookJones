@@ -183,11 +183,11 @@
 		BF2A8ABA24A90E2E00734F1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF2A8ABF24A90E2E00734F1D /* Pieces */,
 				BF2A8ABB24A90E2E00734F1D /* Location.swift */,
 				BF2A8ABC24A90E2E00734F1D /* TileType.swift */,
 				BF2A8ABD24A90E2E00734F1D /* Board.swift */,
 				BF2A8ABE24A90E2E00734F1D /* BoardLoader.swift */,
-				BF2A8ABF24A90E2E00734F1D /* Pieces */,
 				BF2A8AC624A90E2E00734F1D /* BoardLogic.swift */,
 				BF2A8AC724A90E2E00734F1D /* LevelBundle.swift */,
 				BF2A8AC824A90E2E00734F1D /* LevelBundleLoader.swift */,
