@@ -225,6 +225,16 @@
 			path = "Test Levels";
 			sourceTree = "<group>";
 		};
+		BF2A8B1924A9102200734F1D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BF9197A024A90C69005E1B1D /* AppDelegate.swift */,
+				BF9197A224A90C69005E1B1D /* SceneDelegate.swift */,
+				BF9197AB24A90C69005E1B1D /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		BF91979424A90C69005E1B1D = {
 			isa = PBXGroup;
 			children = (
@@ -249,14 +259,12 @@
 		BF91979F24A90C69005E1B1D /* RookJones */ = {
 			isa = PBXGroup;
 			children = (
+				BF2A8B1924A9102200734F1D /* App */,
 				BF2A8AB224A90E2E00734F1D /* Levels */,
 				BF2A8ABA24A90E2E00734F1D /* Model */,
-				BF9197A024A90C69005E1B1D /* AppDelegate.swift */,
-				BF9197A224A90C69005E1B1D /* SceneDelegate.swift */,
 				BF9197A424A90C69005E1B1D /* ContentView.swift */,
-				BF9197A624A90C69005E1B1D /* Assets.xcassets */,
-				BF9197AB24A90C69005E1B1D /* LaunchScreen.storyboard */,
 				BF9197AE24A90C69005E1B1D /* Info.plist */,
+				BF9197A624A90C69005E1B1D /* Assets.xcassets */,
 				BF9197A824A90C69005E1B1D /* Preview Content */,
 			);
 			path = RookJones;
