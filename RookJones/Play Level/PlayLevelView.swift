@@ -16,6 +16,6 @@ struct PlayLevelView: View {
 
 struct PlayLevelView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayLevelView(level: LevelBundleLoader().levelBundles[0].levels[0].level)
+        PlayLevelView(level: levelBundles[0].levels[0].level)
     }
 }

@@ -13,6 +13,6 @@ struct SelectLevelView: View {
 
 struct SelectLevelView_Previews: PreviewProvider {
     static var previews: some View {
-        SelectLevelView(bundles: LevelBundleLoader().levelBundles)
+        SelectLevelView(bundles: levelBundles)
     }
 }

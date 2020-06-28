@@ -2,7 +2,9 @@
 
 import UIKit
 
-class LevelBundleLoader {
+var levelBundles: [LevelBundle] = LevelBundleLoader().levelBundles
+
+private class LevelBundleLoader {
     init() {
         levelBundles = [LevelBundle]()
         let levels = BoardLoader.loadLevels()

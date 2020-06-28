@@ -23,13 +23,11 @@ struct SelectLevelEntryView: View {
 struct SelectLevelEntryView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SelectLevelEntryView(level: LevelBundleLoader().levelBundles[0].levels[0],
+            SelectLevelEntryView(level: levelBundles[0].levels[0],
                                  index: 0)
-                .previewLayout(.fixed(width: 50, height: 50))
-            
-            SelectLevelEntryView(level: LevelBundleLoader().levelBundles[0].levels[1],
+            SelectLevelEntryView(level: levelBundles[0].levels[1],
                                  index: 1)
-                .previewLayout(.fixed(width: 50, height: 50))
         }
+        .previewLayout(.fixed(width: 50, height: 50))
     }
 }
