@@ -1,7 +1,7 @@
 
 import Foundation
 
-class RookJones: Piece {
+class RookJonesPiece: Piece {
     init(hasKey: Bool, hasAllies: Bool) {
         self.hasKey = hasKey
         self.hasAllies = hasAllies

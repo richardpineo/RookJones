@@ -2,7 +2,7 @@
 import Foundation
 
 // Wraps a Level object with any properties needed to display in the UI.
-class LevelUI {
+class LevelUI: Identifiable {
     init(shortName: String, level: Level) {
         self.shortName = shortName
         self.level = level

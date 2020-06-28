@@ -65,6 +65,9 @@
 		BF2A8B1424A90E4D00734F1D /* bad - two rook jones.test in Resources */ = {isa = PBXBuildFile; fileRef = BF2A8B0524A90E4D00734F1D /* bad - two rook jones.test */; };
 		BF2A8B1624A90E4D00734F1D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B0624A90E4D00734F1D /* Util.swift */; };
 		BF2A8B1824A90E5600734F1D /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B1724A90E5600734F1D /* BaseTests.swift */; };
+		BF2A8B1C24A9127900734F1D /* LevelSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B1B24A9127900734F1D /* LevelSelectView.swift */; };
+		BF2A8B1E24A914C200734F1D /* LevelEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B1D24A914C200734F1D /* LevelEntryView.swift */; };
+		BF2A8B2024A9172D00734F1D /* LevelBundleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B1F24A9172D00734F1D /* LevelBundleView.swift */; };
 		BF9197A124A90C69005E1B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A024A90C69005E1B1D /* AppDelegate.swift */; };
 		BF9197A324A90C69005E1B1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A224A90C69005E1B1D /* SceneDelegate.swift */; };
 		BF9197A524A90C69005E1B1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A424A90C69005E1B1D /* ContentView.swift */; };
@@ -126,6 +129,9 @@
 		BF2A8B0524A90E4D00734F1D /* bad - two rook jones.test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bad - two rook jones.test"; sourceTree = "<group>"; };
 		BF2A8B0624A90E4D00734F1D /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		BF2A8B1724A90E5600734F1D /* BaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
+		BF2A8B1B24A9127900734F1D /* LevelSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectView.swift; sourceTree = "<group>"; };
+		BF2A8B1D24A914C200734F1D /* LevelEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelEntryView.swift; sourceTree = "<group>"; };
+		BF2A8B1F24A9172D00734F1D /* LevelBundleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBundleView.swift; sourceTree = "<group>"; };
 		BF91979D24A90C69005E1B1D /* RookJones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RookJones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9197A024A90C69005E1B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF9197A224A90C69005E1B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -235,6 +241,16 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		BF2A8B1A24A9126100734F1D /* Level Select */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A8B1B24A9127900734F1D /* LevelSelectView.swift */,
+				BF2A8B1D24A914C200734F1D /* LevelEntryView.swift */,
+				BF2A8B1F24A9172D00734F1D /* LevelBundleView.swift */,
+			);
+			path = "Level Select";
+			sourceTree = "<group>";
+		};
 		BF91979424A90C69005E1B1D = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +275,7 @@
 		BF91979F24A90C69005E1B1D /* RookJones */ = {
 			isa = PBXGroup;
 			children = (
+				BF2A8B1A24A9126100734F1D /* Level Select */,
 				BF2A8B1924A9102200734F1D /* App */,
 				BF2A8AB224A90E2E00734F1D /* Levels */,
 				BF2A8ABA24A90E2E00734F1D /* Model */,
@@ -453,6 +470,9 @@
 				BF2A8AF224A90E2F00734F1D /* LevelBundle.swift in Sources */,
 				BF2A8AF824A90E2F00734F1D /* BoardError.swift in Sources */,
 				BF2A8AF624A90E2F00734F1D /* BoardLayout.xcdatamodeld in Sources */,
+				BF2A8B1C24A9127900734F1D /* LevelSelectView.swift in Sources */,
+				BF2A8B2024A9172D00734F1D /* LevelBundleView.swift in Sources */,
+				BF2A8B1E24A914C200734F1D /* LevelEntryView.swift in Sources */,
 				BF2A8AEE24A90E2E00734F1D /* RookJones.swift in Sources */,
 				BF9197A124A90C69005E1B1D /* AppDelegate.swift in Sources */,
 				BF9197A324A90C69005E1B1D /* SceneDelegate.swift in Sources */,
