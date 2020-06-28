@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF9197A124A90C69005E1B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A024A90C69005E1B1D /* AppDelegate.swift */; };
+		BF9197A324A90C69005E1B1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A224A90C69005E1B1D /* SceneDelegate.swift */; };
+		BF9197A524A90C69005E1B1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A424A90C69005E1B1D /* ContentView.swift */; };
+		BF9197A724A90C69005E1B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9197A624A90C69005E1B1D /* Assets.xcassets */; };
+		BF9197AA24A90C69005E1B1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9197A924A90C69005E1B1D /* Preview Assets.xcassets */; };
+		BF9197AD24A90C69005E1B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9197AB24A90C69005E1B1D /* LaunchScreen.storyboard */; };
+		BF9197B824A90C69005E1B1D /* RookJonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197B724A90C69005E1B1D /* RookJonesTests.swift */; };
+		BF9197C324A90C6A005E1B1D /* RookJonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197C224A90C6A005E1B1D /* RookJonesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF9197B424A90C69005E1B1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF91979524A90C69005E1B1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF91979C24A90C69005E1B1D;
+			remoteInfo = RookJones;
+		};
+		BF9197BF24A90C6A005E1B1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF91979524A90C69005E1B1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF91979C24A90C69005E1B1D;
+			remoteInfo = RookJones;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF91979D24A90C69005E1B1D /* RookJones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RookJones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9197A024A90C69005E1B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF9197A224A90C69005E1B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF9197A424A90C69005E1B1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF9197A624A90C69005E1B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF9197A924A90C69005E1B1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF9197AC24A90C69005E1B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF9197AE24A90C69005E1B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9197B324A90C69005E1B1D /* RookJonesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RookJonesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9197B724A90C69005E1B1D /* RookJonesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookJonesTests.swift; sourceTree = "<group>"; };
+		BF9197B924A90C69005E1B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9197BE24A90C6A005E1B1D /* RookJonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RookJonesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9197C224A90C6A005E1B1D /* RookJonesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookJonesUITests.swift; sourceTree = "<group>"; };
+		BF9197C424A90C6A005E1B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF91979A24A90C69005E1B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9197B024A90C69005E1B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9197BB24A90C6A005E1B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF91979424A90C69005E1B1D = {
+			isa = PBXGroup;
+			children = (
+				BF91979F24A90C69005E1B1D /* RookJones */,
+				BF9197B624A90C69005E1B1D /* RookJonesTests */,
+				BF9197C124A90C6A005E1B1D /* RookJonesUITests */,
+				BF91979E24A90C69005E1B1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF91979E24A90C69005E1B1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF91979D24A90C69005E1B1D /* RookJones.app */,
+				BF9197B324A90C69005E1B1D /* RookJonesTests.xctest */,
+				BF9197BE24A90C6A005E1B1D /* RookJonesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF91979F24A90C69005E1B1D /* RookJones */ = {
+			isa = PBXGroup;
+			children = (
+				BF9197A024A90C69005E1B1D /* AppDelegate.swift */,
+				BF9197A224A90C69005E1B1D /* SceneDelegate.swift */,
+				BF9197A424A90C69005E1B1D /* ContentView.swift */,
+				BF9197A624A90C69005E1B1D /* Assets.xcassets */,
+				BF9197AB24A90C69005E1B1D /* LaunchScreen.storyboard */,
+				BF9197AE24A90C69005E1B1D /* Info.plist */,
+				BF9197A824A90C69005E1B1D /* Preview Content */,
+			);
+			path = RookJones;
+			sourceTree = "<group>";
+		};
+		BF9197A824A90C69005E1B1D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BF9197A924A90C69005E1B1D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF9197B624A90C69005E1B1D /* RookJonesTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF9197B724A90C69005E1B1D /* RookJonesTests.swift */,
+				BF9197B924A90C69005E1B1D /* Info.plist */,
+			);
+			path = RookJonesTests;
+			sourceTree = "<group>";
+		};
+		BF9197C124A90C6A005E1B1D /* RookJonesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF9197C224A90C6A005E1B1D /* RookJonesUITests.swift */,
+				BF9197C424A90C6A005E1B1D /* Info.plist */,
+			);
+			path = RookJonesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF91979C24A90C69005E1B1D /* RookJones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF9197C724A90C6A005E1B1D /* Build configuration list for PBXNativeTarget "RookJones" */;
+			buildPhases = (
+				BF91979924A90C69005E1B1D /* Sources */,
+				BF91979A24A90C69005E1B1D /* Frameworks */,
+				BF91979B24A90C69005E1B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RookJones;
+			productName = RookJones;
+			productReference = BF91979D24A90C69005E1B1D /* RookJones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF9197B224A90C69005E1B1D /* RookJonesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF9197CA24A90C6A005E1B1D /* Build configuration list for PBXNativeTarget "RookJonesTests" */;
+			buildPhases = (
+				BF9197AF24A90C69005E1B1D /* Sources */,
+				BF9197B024A90C69005E1B1D /* Frameworks */,
+				BF9197B124A90C69005E1B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF9197B524A90C69005E1B1D /* PBXTargetDependency */,
+			);
+			name = RookJonesTests;
+			productName = RookJonesTests;
+			productReference = BF9197B324A90C69005E1B1D /* RookJonesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF9197BD24A90C6A005E1B1D /* RookJonesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF9197CD24A90C6A005E1B1D /* Build configuration list for PBXNativeTarget "RookJonesUITests" */;
+			buildPhases = (
+				BF9197BA24A90C6A005E1B1D /* Sources */,
+				BF9197BB24A90C6A005E1B1D /* Frameworks */,
+				BF9197BC24A90C6A005E1B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF9197C024A90C6A005E1B1D /* PBXTargetDependency */,
+			);
+			name = RookJonesUITests;
+			productName = RookJonesUITests;
+			productReference = BF9197BE24A90C6A005E1B1D /* RookJonesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF91979524A90C69005E1B1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				TargetAttributes = {
+					BF91979C24A90C69005E1B1D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					BF9197B224A90C69005E1B1D = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = BF91979C24A90C69005E1B1D;
+					};
+					BF9197BD24A90C6A005E1B1D = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = BF91979C24A90C69005E1B1D;
+					};
+				};
+			};
+			buildConfigurationList = BF91979824A90C69005E1B1D /* Build configuration list for PBXProject "RookJones" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF91979424A90C69005E1B1D;
+			productRefGroup = BF91979E24A90C69005E1B1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF91979C24A90C69005E1B1D /* RookJones */,
+				BF9197B224A90C69005E1B1D /* RookJonesTests */,
+				BF9197BD24A90C6A005E1B1D /* RookJonesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF91979B24A90C69005E1B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9197AD24A90C69005E1B1D /* LaunchScreen.storyboard in Resources */,
+				BF9197AA24A90C69005E1B1D /* Preview Assets.xcassets in Resources */,
+				BF9197A724A90C69005E1B1D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9197B124A90C69005E1B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9197BC24A90C6A005E1B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF91979924A90C69005E1B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9197A124A90C69005E1B1D /* AppDelegate.swift in Sources */,
+				BF9197A324A90C69005E1B1D /* SceneDelegate.swift in Sources */,
+				BF9197A524A90C69005E1B1D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9197AF24A90C69005E1B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9197B824A90C69005E1B1D /* RookJonesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9197BA24A90C6A005E1B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9197C324A90C6A005E1B1D /* RookJonesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF9197B524A90C69005E1B1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF91979C24A90C69005E1B1D /* RookJones */;
+			targetProxy = BF9197B424A90C69005E1B1D /* PBXContainerItemProxy */;
+		};
+		BF9197C024A90C6A005E1B1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF91979C24A90C69005E1B1D /* RookJones */;
+			targetProxy = BF9197BF24A90C6A005E1B1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF9197AB24A90C69005E1B1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF9197AC24A90C69005E1B1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF9197C524A90C6A005E1B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF9197C624A90C6A005E1B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF9197C824A90C6A005E1B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RookJones/Preview Content\"";
+				DEVELOPMENT_TEAM = WE3Z3S3MCF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RookJones/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineo.RookJones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF9197C924A90C6A005E1B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RookJones/Preview Content\"";
+				DEVELOPMENT_TEAM = WE3Z3S3MCF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RookJones/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineo.RookJones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF9197CB24A90C6A005E1B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE3Z3S3MCF;
+				INFOPLIST_FILE = RookJonesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineo.RookJonesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RookJones.app/RookJones";
+			};
+			name = Debug;
+		};
+		BF9197CC24A90C6A005E1B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE3Z3S3MCF;
+				INFOPLIST_FILE = RookJonesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineo.RookJonesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RookJones.app/RookJones";
+			};
+			name = Release;
+		};
+		BF9197CE24A90C6A005E1B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE3Z3S3MCF;
+				INFOPLIST_FILE = RookJonesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineo.RookJonesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RookJones;
+			};
+			name = Debug;
+		};
+		BF9197CF24A90C6A005E1B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE3Z3S3MCF;
+				INFOPLIST_FILE = RookJonesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineo.RookJonesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RookJones;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF91979824A90C69005E1B1D /* Build configuration list for PBXProject "RookJones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9197C524A90C6A005E1B1D /* Debug */,
+				BF9197C624A90C6A005E1B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF9197C724A90C6A005E1B1D /* Build configuration list for PBXNativeTarget "RookJones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9197C824A90C6A005E1B1D /* Debug */,
+				BF9197C924A90C6A005E1B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF9197CA24A90C6A005E1B1D /* Build configuration list for PBXNativeTarget "RookJonesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9197CB24A90C6A005E1B1D /* Debug */,
+				BF9197CC24A90C6A005E1B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF9197CD24A90C6A005E1B1D /* Build configuration list for PBXNativeTarget "RookJonesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9197CE24A90C6A005E1B1D /* Debug */,
+				BF9197CF24A90C6A005E1B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF91979524A90C69005E1B1D /* Project object */;
+}
