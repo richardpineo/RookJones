@@ -14,13 +14,7 @@ struct SelectLevelBundleView: View {
 
             HStack(alignment: .top, spacing: 0) {
                 ForEach(Array(bundle.levels.enumerated()), id: \.offset) { index, level in
-                    NavigationLink(
-                        destination: PlayLevelView(
-                            level: level.level
-                        )
-                    ) {
-                        SelectLevelEntryView(level: level, index: index)
-                    }
+                    SelectLevelEntryView(level: level, index: index)
                 }
                 Spacer()
             }

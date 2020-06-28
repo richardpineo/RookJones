@@ -4,6 +4,7 @@ import SwiftUI
 struct SelectLevelEntryView: View {
     var level: LevelUI
     var index: Int
+    @EnvironmentObject var viewRouter: ViewRouter
 
     var body: some View {
         HStack {
@@ -15,6 +16,10 @@ struct SelectLevelEntryView: View {
                     .border(Color.gray, width: 2)
                     .foregroundColor(.black)
                     .background(Color(.white))
+            }
+            .onTapGesture {
+                print("Playing level: \(self.level.shortName)")
+                self.viewRouter.playLevel(level: self.level.level)
             }
         }
     }
