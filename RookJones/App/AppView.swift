@@ -2,22 +2,24 @@
 import SwiftUI
 
 struct AppView: View {
-    @EnvironmentObject var viewRouter: ViewRouter
+	@EnvironmentObject var viewRouter: ViewRouter
+	@EnvironmentObject var levelEnvironment: LevelEnvironment
 
-    var body: some View {
-        VStack {
-            if viewRouter.currentMode == .SelectLevel {
-                SelectLevelView(bundles: levelBundles)
-            } else if viewRouter.currentMode == .PlayLevel {
-                PlayLevelView(level: viewRouter.currentLevel!)
-            }
-        }
-    }
+	var body: some View {
+		VStack {
+			if viewRouter.currentMode == .PlayLevel && levelEnvironment.level != nil {
+				PlayLevelView(level: levelEnvironment.level!)
+			} else {
+				SelectLevelView(bundles: levelBundles)
+			}
+		}
+	}
 }
 
 struct AppView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppView()
-            .environmentObject(ViewRouter())
-    }
+	static var previews: some View {
+		AppView()
+			.environmentObject(ViewRouter())
+			.environmentObject(LevelEnvironment())
+	}
 }
