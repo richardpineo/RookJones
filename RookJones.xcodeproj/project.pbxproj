@@ -78,10 +78,13 @@
 		BF9197AA24A90C69005E1B1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9197A924A90C69005E1B1D /* Preview Assets.xcassets */; };
 		BF9197AD24A90C69005E1B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9197AB24A90C69005E1B1D /* LaunchScreen.storyboard */; };
 		BF9197C324A90C6A005E1B1D /* RookJonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197C224A90C6A005E1B1D /* RookJonesUITests.swift */; };
+		BFBB0B9A24AFE8010071AD44 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB0B9924AFE8010071AD44 /* ControlsView.swift */; };
+		BFBB0B9E24AFE8980071AD44 /* ControlButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB0B9D24AFE8980071AD44 /* ControlButtonStyle.swift */; };
 		BFD1907924AFAC7700BD0894 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1907824AFAC7700BD0894 /* BoardView.swift */; };
 		BFD1907B24AFACC100BD0894 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1907A24AFACC100BD0894 /* TileView.swift */; };
 		BFD1907D24AFAEA100BD0894 /* LevelEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1907C24AFAEA100BD0894 /* LevelEnvironment.swift */; };
 		BFD1907F24AFB26600BD0894 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = BFD1907E24AFB26600BD0894 /* .swift-version */; };
+		BFDC9D3C24AFF01100550109 /* BoardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC9D3B24AFF01100550109 /* BoardContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,10 +158,13 @@
 		BF9197BE24A90C6A005E1B1D /* RookJonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RookJonesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9197C224A90C6A005E1B1D /* RookJonesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookJonesUITests.swift; sourceTree = "<group>"; };
 		BF9197C424A90C6A005E1B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBB0B9924AFE8010071AD44 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		BFBB0B9D24AFE8980071AD44 /* ControlButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonStyle.swift; sourceTree = "<group>"; };
 		BFD1907824AFAC7700BD0894 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		BFD1907A24AFACC100BD0894 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		BFD1907C24AFAEA100BD0894 /* LevelEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelEnvironment.swift; sourceTree = "<group>"; };
 		BFD1907E24AFB26600BD0894 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		BFDC9D3B24AFF01100550109 /* BoardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +278,9 @@
 			isa = PBXGroup;
 			children = (
 				BF2A8B2224A9450300734F1D /* PlayLevelView.swift */,
+				BFDC9D3B24AFF01100550109 /* BoardContainerView.swift */,
+				BFBB0B9924AFE8010071AD44 /* ControlsView.swift */,
+				BFBB0B9D24AFE8980071AD44 /* ControlButtonStyle.swift */,
 				BFD1907824AFAC7700BD0894 /* BoardView.swift */,
 				BFD1907A24AFACC100BD0894 /* TileView.swift */,
 				BF59232824AFBF0E00A80F97 /* TileViewModel.swift */,
@@ -498,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2A8B2924A9534200734F1D /* AppView.swift in Sources */,
+				BFBB0B9E24AFE8980071AD44 /* ControlButtonStyle.swift in Sources */,
 				BF59232924AFBF0E00A80F97 /* TileViewModel.swift in Sources */,
 				BF2A8B2724A952BA00734F1D /* ViewRouter.swift in Sources */,
 				BF2A8AF224A90E2F00734F1D /* LevelBundle.swift in Sources */,
@@ -521,10 +531,12 @@
 				BF2A8AE624A90E2E00734F1D /* Piece.swift in Sources */,
 				BF2A8AE824A90E2E00734F1D /* Bishop.swift in Sources */,
 				BF2A8AF424A90E2F00734F1D /* LevelBundleLoader.swift in Sources */,
+				BFDC9D3C24AFF01100550109 /* BoardContainerView.swift in Sources */,
 				BF2A8AEC24A90E2E00734F1D /* Rook.swift in Sources */,
 				BF2A8ADC24A90E2E00734F1D /* Location.swift in Sources */,
 				BF2A8AE224A90E2E00734F1D /* BoardLoader.swift in Sources */,
 				BF2A8AFC24A90E2F00734F1D /* Level.swift in Sources */,
+				BFBB0B9A24AFE8010071AD44 /* ControlsView.swift in Sources */,
 				BF2A8AFA24A90E2F00734F1D /* LevelUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

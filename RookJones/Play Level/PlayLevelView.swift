@@ -7,12 +7,24 @@ struct PlayLevelView: View {
 	var level: Level
 
 	var body: some View {
-		BoardView(level: level)
-			.onTapGesture {
-				print("Back to main")
-				self.viewRouter.selectLevel()
-			}
-	}
+        ZStack {
+            Image("Background")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                ControlsView()
+                ScrollView {
+                    BoardView(level: level)
+                        .clipped()
+                        .border(Color(red: 0.4, green: 0.0, blue: 0.0, opacity: 1.0), width: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/)
+
+                }
+//                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+            }
+                
+        }
+    }
 }
 
 struct PlayLevelView_Previews: PreviewProvider {

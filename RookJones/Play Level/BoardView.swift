@@ -5,46 +5,41 @@ struct BoardView: View {
 	@EnvironmentObject var levelEnvironment: LevelEnvironment
 
 	var level: Level
-	@State var zoomMultiplier = CGFloat(1.0)
+	@State var scale = CGFloat(1.0)
 	let baseTileDims = CGFloat(50.0)
 
-	@State private var currentPosition: CGSize = .zero
-	@State private var newPosition: CGSize = .zero
-
+    @GestureState private var dragOffset = CGSize.zero
+    @State private var position = CGSize.zero
+    
 	var body: some View {
-		ZStack {
-			Image("Background")
-				.resizable()
-				.scaledToFill()
-				.edgesIgnoringSafeArea(.all)
-
-			VStack(alignment: .leading, spacing: 0) {
-				ForEach(-1 ... level.board.numRows, id: \.self) { row in
-					HStack(alignment: .top, spacing: 0) {
-						ForEach(-1 ... self.level.board.numCols, id: \.self) { col in
-							TileView(model: self.tileModel(Location(row, col)))
-								.frame(width: self.baseTileDims, height: self.baseTileDims)
-						}
+		VStack(alignment: .leading, spacing: 0) {
+			ForEach(-1 ... level.board.numRows, id: \.self) { row in
+				HStack(alignment: .top, spacing: 0) {
+					ForEach(-1 ... self.level.board.numCols, id: \.self) { col in
+						TileView(model: self.tileModel(Location(row, col)))
+							.frame(width: self.baseTileDims, height: self.baseTileDims)
 					}
 				}
 			}
-			.scaleEffect(zoomMultiplier)
-			.offset(x: self.currentPosition.width, y: self.currentPosition.height)
-			.gesture(MagnificationGesture()
-				.onChanged { value in
-					self.zoomMultiplier = value.magnitude
-				}
-			)
-			.gesture(DragGesture()
-				.onChanged { value in
-					self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
-				}
-				.onEnded { value in
-					self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
-					print(self.newPosition.width)
-					self.newPosition = self.currentPosition
-                      })
 		}
+		.scaleEffect(scale)
+		.offset(x: position.width + dragOffset.width, y: position.height + dragOffset.height)
+		.gesture(MagnificationGesture()
+			.onChanged { value in
+				self.scale = value.magnitude
+			}
+		)
+		.gesture(
+                   DragGesture()
+                       .updating($dragOffset, body: { (value, state, transaction) in
+        
+                           state = value.translation
+                       })
+                       .onEnded({ (value) in
+                           self.position.height += value.translation.height
+                           self.position.width += value.translation.width
+                       })
+               )
 	}
 
 	func tileModel(_ loc: Location) -> TileViewModel {
