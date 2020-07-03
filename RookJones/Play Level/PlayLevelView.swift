@@ -14,15 +14,9 @@ struct PlayLevelView: View {
             
             VStack {
                 ControlsView()
-                ScrollView {
-                    BoardView(level: level)
-                        .clipped()
-                        .border(Color(red: 0.4, green: 0.0, blue: 0.0, opacity: 1.0), width: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/)
-
-                }
-//                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+                BoardContainerView(level: self.level)
+                    .padding()
             }
-                
         }
     }
 }

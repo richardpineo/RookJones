@@ -5,11 +5,8 @@ struct BoardView: View {
 	@EnvironmentObject var levelEnvironment: LevelEnvironment
 
 	var level: Level
-	@State var scale = CGFloat(1.0)
 	let baseTileDims = CGFloat(50.0)
 
-    @GestureState private var dragOffset = CGSize.zero
-    @State private var position = CGSize.zero
     
 	var body: some View {
 		VStack(alignment: .leading, spacing: 0) {
@@ -22,24 +19,6 @@ struct BoardView: View {
 				}
 			}
 		}
-		.scaleEffect(scale)
-		.offset(x: position.width + dragOffset.width, y: position.height + dragOffset.height)
-		.gesture(MagnificationGesture()
-			.onChanged { value in
-				self.scale = value.magnitude
-			}
-		)
-		.gesture(
-                   DragGesture()
-                       .updating($dragOffset, body: { (value, state, transaction) in
-        
-                           state = value.translation
-                       })
-                       .onEnded({ (value) in
-                           self.position.height += value.translation.height
-                           self.position.width += value.translation.width
-                       })
-               )
 	}
 
 	func tileModel(_ loc: Location) -> TileViewModel {
