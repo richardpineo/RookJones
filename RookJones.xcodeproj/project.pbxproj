@@ -71,7 +71,7 @@
 		BF2A8B2324A9450300734F1D /* PlayLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B2224A9450300734F1D /* PlayLevelView.swift */; };
 		BF2A8B2724A952BA00734F1D /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B2624A952BA00734F1D /* ViewRouter.swift */; };
 		BF2A8B2924A9534200734F1D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A8B2824A9534200734F1D /* AppView.swift */; };
-		BF59232924AFBF0E00A80F97 /* TileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59232824AFBF0E00A80F97 /* TileModel.swift */; };
+		BF59232924AFBF0E00A80F97 /* TileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59232824AFBF0E00A80F97 /* TileViewModel.swift */; };
 		BF9197A124A90C69005E1B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A024A90C69005E1B1D /* AppDelegate.swift */; };
 		BF9197A324A90C69005E1B1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9197A224A90C69005E1B1D /* SceneDelegate.swift */; };
 		BF9197A724A90C69005E1B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9197A624A90C69005E1B1D /* Assets.xcassets */; };
@@ -142,7 +142,7 @@
 		BF2A8B2224A9450300734F1D /* PlayLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayLevelView.swift; sourceTree = "<group>"; };
 		BF2A8B2624A952BA00734F1D /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		BF2A8B2824A9534200734F1D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
-		BF59232824AFBF0E00A80F97 /* TileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileModel.swift; sourceTree = "<group>"; };
+		BF59232824AFBF0E00A80F97 /* TileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewModel.swift; sourceTree = "<group>"; };
 		BF91979D24A90C69005E1B1D /* RookJones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RookJones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9197A024A90C69005E1B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF9197A224A90C69005E1B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -274,7 +274,7 @@
 				BF2A8B2224A9450300734F1D /* PlayLevelView.swift */,
 				BFD1907824AFAC7700BD0894 /* BoardView.swift */,
 				BFD1907A24AFACC100BD0894 /* TileView.swift */,
-				BF59232824AFBF0E00A80F97 /* TileModel.swift */,
+				BF59232824AFBF0E00A80F97 /* TileViewModel.swift */,
 			);
 			path = "Play Level";
 			sourceTree = "<group>";
@@ -498,7 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2A8B2924A9534200734F1D /* AppView.swift in Sources */,
-				BF59232924AFBF0E00A80F97 /* TileModel.swift in Sources */,
+				BF59232924AFBF0E00A80F97 /* TileViewModel.swift in Sources */,
 				BF2A8B2724A952BA00734F1D /* ViewRouter.swift in Sources */,
 				BF2A8AF224A90E2F00734F1D /* LevelBundle.swift in Sources */,
 				BF2A8AF824A90E2F00734F1D /* BoardError.swift in Sources */,

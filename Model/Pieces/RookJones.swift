@@ -48,10 +48,9 @@ class RookJonesPiece: Piece {
 				if addLoc {
 					attacks.append(loc)
 					loc = loc.offset(movement)
+				} else {
+					loc = Location.invalid
 				}
-                else {
-                    loc = Location.invalid
-                }
 			}
 		}
 

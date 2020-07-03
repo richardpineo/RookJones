@@ -21,8 +21,8 @@ class Location: Hashable {
 	public func offset(_ offset: Location) -> Location {
 		Location(row + offset.row, col + offset.col)
 	}
-    
-    static var invalid: Location = Location(-666,-666)
+
+	static var invalid: Location = Location(-666, -666)
 
 	let row: Int
 	let col: Int

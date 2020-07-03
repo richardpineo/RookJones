@@ -23,7 +23,7 @@ class Board: Equatable {
 	public static func == (lhs: Board, rhs: Board) -> Bool {
 		lhs.tiles == rhs.tiles
 	}
-    
+
 	func getTileType(_ loc: Location) -> TileType {
 		do {
 			return try tiles[arrayIndex(loc)]
