@@ -5,30 +5,47 @@ struct BoardView: View {
 	@EnvironmentObject var levelEnvironment: LevelEnvironment
 
 	var level: Level
-    @State var zoomMultiplier = CGFloat(1.0)
-    
-  
+	@State var zoomMultiplier = CGFloat(1.0)
+	let baseTileDims = CGFloat(50.0)
+
+	@State private var currentPosition: CGSize = .zero
+	@State private var newPosition: CGSize = .zero
+
 	var body: some View {
-		VStack(alignment: .leading, spacing: 0) {
-			ForEach(-1 ... level.board.numRows, id: \.self) { row in
-				HStack(alignment: .top, spacing: 0) {
-					ForEach(-1 ... self.level.board.numCols, id: \.self) { col in
-						TileView(model: self.tileModel(Location(row, col)))
-                            .frame(width: self.tileDims, height: self.tileDims)
+		ZStack {
+			Image("Background")
+				.resizable()
+				.scaledToFill()
+				.edgesIgnoringSafeArea(.all)
+
+			VStack(alignment: .leading, spacing: 0) {
+				ForEach(-1 ... level.board.numRows, id: \.self) { row in
+					HStack(alignment: .top, spacing: 0) {
+						ForEach(-1 ... self.level.board.numCols, id: \.self) { col in
+							TileView(model: self.tileModel(Location(row, col)))
+								.frame(width: self.baseTileDims, height: self.baseTileDims)
+						}
 					}
 				}
 			}
-        }.gesture(MagnificationGesture()
-            .onChanged { value in
-                self.zoomMultiplier = value.magnitude
-            }
-        )
+			.scaleEffect(zoomMultiplier)
+			.offset(x: self.currentPosition.width, y: self.currentPosition.height)
+			.gesture(MagnificationGesture()
+				.onChanged { value in
+					self.zoomMultiplier = value.magnitude
+				}
+			)
+			.gesture(DragGesture()
+				.onChanged { value in
+					self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
+				}
+				.onEnded { value in
+					self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
+					print(self.newPosition.width)
+					self.newPosition = self.currentPosition
+                      })
+		}
 	}
-    
-    var tileDims: CGFloat {
-        let baseTileDims = CGFloat(50.0)
-        return baseTileDims * self.zoomMultiplier
-    }
 
 	func tileModel(_ loc: Location) -> TileViewModel {
 		TileViewModel(

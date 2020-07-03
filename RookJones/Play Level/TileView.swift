@@ -66,7 +66,7 @@ struct TileView: View {
 		case TileType.Wall:
 			return "Wall"
 		default:
-			return ""
+			return nil
 		}
 	}
 }
