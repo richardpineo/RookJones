@@ -85,6 +85,7 @@
 		BFD1907D24AFAEA100BD0894 /* LevelEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1907C24AFAEA100BD0894 /* LevelEnvironment.swift */; };
 		BFD1907F24AFB26600BD0894 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = BFD1907E24AFB26600BD0894 /* .swift-version */; };
 		BFDC9D3C24AFF01100550109 /* BoardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC9D3B24AFF01100550109 /* BoardContainerView.swift */; };
+		BFDC9D3E24AFFF5B00550109 /* RookJonesIsDeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC9D3D24AFFF5B00550109 /* RookJonesIsDeadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		BFD1907C24AFAEA100BD0894 /* LevelEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelEnvironment.swift; sourceTree = "<group>"; };
 		BFD1907E24AFB26600BD0894 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		BFDC9D3B24AFF01100550109 /* BoardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContainerView.swift; sourceTree = "<group>"; };
+		BFDC9D3D24AFFF5B00550109 /* RookJonesIsDeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RookJonesIsDeadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 				BFBB0B9924AFE8010071AD44 /* ControlsView.swift */,
 				BFBB0B9D24AFE8980071AD44 /* ControlButtonStyle.swift */,
 				BFD1907824AFAC7700BD0894 /* BoardView.swift */,
+				BFDC9D3D24AFFF5B00550109 /* RookJonesIsDeadView.swift */,
 				BFD1907A24AFACC100BD0894 /* TileView.swift */,
 				BF59232824AFBF0E00A80F97 /* TileViewModel.swift */,
 			);
@@ -512,6 +515,7 @@
 				BF2A8B2724A952BA00734F1D /* ViewRouter.swift in Sources */,
 				BF2A8AF224A90E2F00734F1D /* LevelBundle.swift in Sources */,
 				BF2A8AF824A90E2F00734F1D /* BoardError.swift in Sources */,
+				BFDC9D3E24AFFF5B00550109 /* RookJonesIsDeadView.swift in Sources */,
 				BF2A8AF624A90E2F00734F1D /* BoardLayout.xcdatamodeld in Sources */,
 				BF2A8B1C24A9127900734F1D /* SelectLevelView.swift in Sources */,
 				BFD1907D24AFAEA100BD0894 /* LevelEnvironment.swift in Sources */,

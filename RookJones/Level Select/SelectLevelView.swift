@@ -5,8 +5,21 @@ struct SelectLevelView: View {
 	var bundles: [LevelBundle]
 
 	var body: some View {
-		List(bundles) { bundle in
-			SelectLevelBundleView(bundle: bundle)
+		ZStack {
+			Image("Background")
+				.resizable()
+				.edgesIgnoringSafeArea(.all)
+
+			ScrollView {
+				VStack {
+					ForEach(bundles) {
+						bundle in
+						SelectLevelBundleView(bundle: bundle)
+							.background(Color.clear)
+							.padding(.bottom, 44.0)
+					}
+				}
+			}
 		}
 	}
 }

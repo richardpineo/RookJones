@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		let appView = AppView()
 			.environmentObject(ViewRouter())
 			.environmentObject(LevelEnvironment())
-
+		UITableView.appearance().backgroundColor = UIColor.clear
 		// Use a UIHostingController as window root view controller.
 		if let windowScene = scene as? UIWindowScene {
 			let window = UIWindow(windowScene: windowScene)

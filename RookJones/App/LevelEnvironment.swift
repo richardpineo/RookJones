@@ -3,26 +3,16 @@ import Combine
 import Foundation
 
 final class LevelEnvironment: ObservableObject {
-	@Published var hasAllies = true
-
 	@Published var showAttacks = true
+	@Published var showMoves = true
 
+	@Published var hasAllies = true
 	@Published var hasKey = false
 
+	@Published
 	var level: Level? {
 		didSet {
 			updateLocations()
-		}
-	}
-
-	private func updateLocations() {
-		attackedLocations = nil
-		rookJonesMovement = nil
-		rookJonesLocation = nil
-
-		if let validBoard = level?.board {
-			rookJonesLocation = validBoard.locations().first(where: { validBoard.getTileType($0) == TileType.RookJones })
-			attackedLocations = BoardLogic.attackedLocations(validBoard)
 		}
 	}
 
@@ -44,6 +34,17 @@ final class LevelEnvironment: ObservableObject {
 
 	func rookJonesCanMoveto(_ loc: Location) -> Bool {
 		rookJonesMovement?.contains(loc) ?? false
+	}
+
+	private func updateLocations() {
+		attackedLocations = nil
+		rookJonesMovement = nil
+		rookJonesLocation = nil
+
+		if let validBoard = level?.board {
+			rookJonesLocation = validBoard.locations().first(where: { validBoard.getTileType($0) == TileType.RookJones })
+			attackedLocations = BoardLogic.attackedLocations(validBoard)
+		}
 	}
 
 	static var withAllies: LevelEnvironment {

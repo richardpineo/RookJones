@@ -7,18 +7,18 @@ struct PlayLevelView: View {
 	var level: Level
 
 	var body: some View {
-        ZStack {
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                ControlsView()
-                BoardContainerView(level: self.level)
-                    .padding()
-            }
-        }
-    }
+		ZStack {
+			Image("Background")
+				.resizable()
+				.edgesIgnoringSafeArea(.all)
+
+			VStack {
+				ControlsView()
+				BoardContainerView(level: self.level)
+					.padding()
+			}
+		}
+	}
 }
 
 struct PlayLevelView_Previews: PreviewProvider {

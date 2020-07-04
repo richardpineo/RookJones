@@ -13,7 +13,7 @@ private class LevelBundleLoader {
 	}
 
 	private func loadTests(levels: [Level]) {
-		let backgroundColor = UIColor(red: 0.85, green: 0.89, blue: 1.00, alpha: 1.0)
+		let backgroundColor = UIColor(red: 0.2275, green: 0.4667, blue: 0.5412, alpha: 1.0)
 		let demonstrations = LevelBundle(name: "Demonstration Levels", backgroundColor: backgroundColor)
 		addLevel(levelBundle: demonstrations, levels: levels, fileName: "Test_00", shortName: "01")
 		addLevel(levelBundle: demonstrations, levels: levels, fileName: "Test_01", shortName: "02")
@@ -21,7 +21,7 @@ private class LevelBundleLoader {
 	}
 
 	private func loadDiamonds(levels: [Level]) {
-		let backgroundColor = UIColor(red: 0.98, green: 0.93, blue: 0.33, alpha: 1.0)
+		let backgroundColor = UIColor(red: 0.7216, green: 0.5373, blue: 0.3569, alpha: 1.0)
 		let diamonds = LevelBundle(name: "Dungeon of Diamonds", backgroundColor: backgroundColor)
 		addLevel(levelBundle: diamonds, levels: levels, fileName: "Diamonds_03", shortName: "03")
 		addLevel(levelBundle: diamonds, levels: levels, fileName: "Diamonds_07", shortName: "07")

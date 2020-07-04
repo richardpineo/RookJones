@@ -11,11 +11,11 @@ struct TileView: View {
 			Image(tileName())
 				.resizable()
 				.aspectRatio(contentMode: .fit)
-			if model.isAttacked {
+			if isAttacked {
 				Image("Attacked")
 					.resizable()
 					.aspectRatio(contentMode: .fit)
-			} else if model.canMoveTo {
+			} else if isPossibleMove {
 				Image("Possible")
 					.resizable()
 					.aspectRatio(contentMode: .fit)
@@ -31,6 +31,15 @@ struct TileView: View {
 					.aspectRatio(contentMode: .fit)
 			}
 		}
+	}
+
+	private var isAttacked: Bool {
+		levelEnvironment.showAttacks && model.isAttacked
+	}
+
+	private var isPossibleMove: Bool {
+		levelEnvironment.showMoves &&
+			model.canMoveTo
 	}
 
 	private func tileName() -> String {

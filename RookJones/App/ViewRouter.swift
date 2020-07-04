@@ -4,6 +4,8 @@ import Foundation
 import SwiftUI
 
 class ViewRouter: ObservableObject {
+	@EnvironmentObject var levelEnvironment: LevelEnvironment
+
 	enum Mode {
 		case SelectLevel
 		case PlayLevel

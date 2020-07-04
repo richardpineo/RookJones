@@ -6,17 +6,32 @@ struct BoardView: View {
 
 	var level: Level
 	let baseTileDims = CGFloat(50.0)
+	@State var dead = false
 
-    
 	var body: some View {
-		VStack(alignment: .leading, spacing: 0) {
-			ForEach(-1 ... level.board.numRows, id: \.self) { row in
-				HStack(alignment: .top, spacing: 0) {
-					ForEach(-1 ... self.level.board.numCols, id: \.self) { col in
-						TileView(model: self.tileModel(Location(row, col)))
-							.frame(width: self.baseTileDims, height: self.baseTileDims)
+		ZStack {
+			VStack(alignment: .leading, spacing: 0) {
+				ForEach(-1 ... level.board.numRows, id: \.self) { row in
+					HStack(alignment: .top, spacing: 0) {
+						ForEach(-1 ... self.level.board.numCols, id: \.self) { col in
+							TileView(model: self.tileModel(Location(row, col)))
+								.frame(width: self.baseTileDims, height: self.baseTileDims)
+								.onTapGesture {
+									let loc = Location(row, col)
+									if self.levelEnvironment.isAttacked(loc) {
+										self.dead = true
+										return
+									}
+									if self.levelEnvironment.rookJonesCanMoveto(loc) {
+										self.levelEnvironment.rookJonesLocation = loc
+									}
+								}
+						}
 					}
 				}
+			}
+			if dead {
+				RookJonesIsDeadView()
 			}
 		}
 	}
